@@ -85,6 +85,12 @@ from movies
   left OUTER JOIN (movie_genre JOIN genre ON (movie_genre.genre_id = genre.id))
 where genres = '%Fantasy%';
 
+select concat('http://www.imdb.com/title/tt', imdbid)
+from links;
+
+select concat('https://www.themoviedb.org/movie/', tmdbid)
+from links;
+
 
 
 
